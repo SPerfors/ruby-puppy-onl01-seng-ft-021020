@@ -17,11 +17,11 @@ class Dog
   end
   
   def self.clear_all 
-    self.all.each {|x| puts "#{x.name}"}
+    self.all.clear 
   end
   
   def self.print_all 
-    return @@all 
+    self.all.each {|x| puts "#{x.name}"}
   end
   
 end
